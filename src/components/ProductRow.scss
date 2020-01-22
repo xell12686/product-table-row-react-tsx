@@ -4,6 +4,21 @@ $grey: #707070;
 .ProductRow {
     table, .ui.table {
         border: 1px solid $grey;
-        border-radius: 5px;
+        border-radius: 15px;
+        padding:10px;
+    }
+    .flag {
+        display: inline-block;
+        img, .ui.image {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .icons {
+        list-style-type: none;
+        li {
+            display: inline-block;
+            padding:5px;
+        }
     }
 }

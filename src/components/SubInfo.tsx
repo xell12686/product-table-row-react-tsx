@@ -1,6 +1,7 @@
 import React from 'react';
 import Flag from '../images/flag-us.jpg';
 import { ReactComponent as IconSkull } from '../images/icon-skull.svg';
+import { Image, List } from 'semantic-ui-react';
 
 interface SubInfo { }
 
@@ -16,14 +17,25 @@ const defaultProps: SubInfo = {
 const SubInfo: React.SFC<SubInfo> = (props) => {
   return (
     <div className='SubInfo'>
-      <img src={Flag} alt='flag' />
+      <div className="flag">
+        <Image src={Flag} alt='flag' size='medium' circular />
+      </div>
       <span>{props.productSku}</span>
-      <ul className='icons'>
-        <li><IconSkull /></li>
-        <li><IconSkull /></li>
-        <li><IconSkull /></li>
-        <li><IconSkull /></li>
-      </ul>
+      <List horizontal className='icons'>
+        <List.Item>
+          <IconSkull />
+        </List.Item>
+        <List.Item>
+          <IconSkull />
+        </List.Item>
+        <List.Item>
+          <IconSkull />
+        </List.Item>
+        <List.Item>
+          <IconSkull />
+        </List.Item>
+      </List>      
+
     </div>
   );
 }

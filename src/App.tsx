@@ -3,7 +3,7 @@ import ProductRow from "./components/ProductRow";
 
 const App: React.FC = () => {
   return (
-    <div className="App" style={{margin:'20px'}} >
+    <div className="App" style={{padding:'20px'}} >
       <ProductRow />
     </div>
   );
