@@ -21,19 +21,31 @@ $pink: #EB675E;
         right: 0;
         margin: auto;
         font-size: 28px;
-        bottom: 15px;
+        bottom: 2px;
         color:$bluishGrey;
     }
     table, .ui.table {
         border: 1px solid $grey;
         border-radius: 15px;
-        padding:5px 5px 10px 5px;
+        padding:5px;
         color: $bodyColor;
         font-family: 'Work Sans', sans-serif;
         margin:0;
+        font-size: 16px;
+        td {
+            padding: 0 10px;
+        }
+    }
+    td.image {
+        padding:5px!important;
+        min-width: 100px;
+        img {
+            display:block;
+            width:100%;
+        }
     }
     .productTextCol {
-        max-width: 179px;
+        max-width: 250px;
     }
     .flag {
         display: inline-block;
@@ -72,18 +84,20 @@ $pink: #EB675E;
     }
     .name {
         color:$skyBlue;
-        margin-bottom: 15px;
         display: inline-block;
+        max-width: 250px;
+        font-size: 14px;
     }
     .sku {
         font-weight: 500;
         margin-right: 15px;
+        font-size: 14px;
     }
     .icons {
         position: relative;
-        bottom: -10px;
+        bottom: -16px;
         .item {
-            width: 20px;
+            width: 23px;
             height:30px;
             line-height: 20px !important;
             float: left;
@@ -115,5 +129,35 @@ $pink: #EB675E;
                 }
             }
         }
+    }
+}
+
+//tabler 
+@media only screen and (max-width: 991px) {
+    .ProductRow  {
+        .productTextCol {
+            max-width: 100%;
+            .flag {
+                padding:5px 0 15px;
+            }
+        }
+    }
+}
+
+//mobile
+@media only screen and (max-width: 600px) {
+    .ProductRow  {
+        table, .ui.table {
+            text-align: center;
+        }
+        .productTextCol {
+            max-width: 100%;
+        }
+        .image {
+            img {
+                max-width: 100px;
+                margin:0 auto;
+            } 
+        }        
     }
 }

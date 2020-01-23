@@ -38,7 +38,7 @@ const ProductRow: React.SFC<ProductRowProps> = (props) => {
               <Table.Cell className='check'>
                 <Checkbox />
               </Table.Cell>
-              <Table.Cell>
+              <Table.Cell className="image">
                 <img src={ProductImg} alt='product'/>
               </Table.Cell>
               <Table.Cell className="productTextCol">
