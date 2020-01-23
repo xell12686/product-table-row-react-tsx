@@ -118,7 +118,7 @@ $pink: #EB675E;
         }
     }
     .RowButtons {
-        margin-top: -5px;
+        margin-top: -25px;
         display: block;
         width: 20px;
         text-align: center;
@@ -151,7 +151,10 @@ $pink: #EB675E;
                 max-width: 150px;
                 margin:0 auto;
             } 
-        }  
+        }
+        .ui.table:not(.unstackable) tr {
+            box-shadow: none !important;
+        }
     }
 }
 
@@ -167,6 +170,7 @@ $pink: #EB675E;
         .RowButtons {
             width:100%;
             height:55px;
+            margin-top:0;
             .ui.list {
                 text-align: center;
                 width: auto;
