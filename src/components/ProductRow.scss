@@ -25,7 +25,7 @@ $pink: #EB675E;
         color:$bluishGrey;
     }
     table, .ui.table {
-        border: 1px solid $grey;
+        border: 1px solid $lightGrey;
         border-radius: 15px;
         padding:5px;
         color: $bodyColor;
@@ -34,6 +34,9 @@ $pink: #EB675E;
         font-size: 16px;
         td {
             padding: 0 10px;
+        }
+        td {
+            box-shadow: none;
         }
     }
     td.image {
