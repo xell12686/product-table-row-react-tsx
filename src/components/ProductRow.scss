@@ -141,6 +141,12 @@ $pink: #EB675E;
                 padding:5px 0 15px;
             }
         }
+        .image {
+            img {
+                max-width: 150px;
+                margin:0 auto;
+            } 
+        }  
     }
 }
 
@@ -153,11 +159,15 @@ $pink: #EB675E;
         .productTextCol {
             max-width: 100%;
         }
-        .image {
-            img {
-                max-width: 100px;
-                margin:0 auto;
-            } 
-        }        
+        .RowButtons {
+            width:100%;
+            height:55px;
+            .ui.list {
+                text-align: center;
+                width: auto;
+                display: inline-block;
+            }
+        }
+     
     }
 }
