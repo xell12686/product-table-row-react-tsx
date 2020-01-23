@@ -36,7 +36,7 @@ $pink: #EB675E;
         td {
             padding: 0 10px;
         }
-        td {
+        tr {
             box-shadow: none;
         }
     }
@@ -118,6 +118,7 @@ $pink: #EB675E;
         }
     }
     .RowButtons {
+        margin-top: -5px;
         display: block;
         width: 20px;
         text-align: center;
