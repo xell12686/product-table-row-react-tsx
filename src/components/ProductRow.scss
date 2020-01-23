@@ -1,14 +1,44 @@
 
+$white: white;
+$bodyColor: #3B4557;
 $grey: #707070;
+$lightGrey: #D4D4D5;
+$darkGrey: #313A4C;
+$bluishGrey: #98AECA;
+$skyBlue: #5381DB;
+$pink: #EB675E;
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700&display=swap');
 
 .ProductRow {
+    padding: 5px 10px;
+    max-width: 1450px;
+    margin: 0 auto;
+    position: relative;
+    > i.icon {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-size: 28px;
+        bottom: 15px;
+        color:$bluishGrey;
+    }
     table, .ui.table {
         border: 1px solid $grey;
         border-radius: 15px;
-        padding:10px;
+        padding:5px 5px 10px 5px;
+        color: $bodyColor;
+        font-family: 'Work Sans', sans-serif;
+        margin:0;
+    }
+    .productTextCol {
+        max-width: 179px;
     }
     .flag {
         display: inline-block;
+        margin-right: 19px;
+        margin-bottom: -9px;
         img, .ui.image {
             width: 30px;
             height: 30px;
@@ -19,6 +49,71 @@ $grey: #707070;
         li {
             display: inline-block;
             padding:5px;
+        }
+    }
+    .ui.checkbox {
+        label {
+            &:before {
+                border-color: $lightGrey;
+            }
+        }
+        &.checked {
+            label {
+                &:before {
+                    background-color: $darkGrey !important;
+                    color: $white;
+                }
+                &:after {
+                    background-color: transparent;
+                    color: $white !important;
+                }
+            }
+        }
+    }
+    .name {
+        color:$skyBlue;
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+    .sku {
+        font-weight: 500;
+        margin-right: 15px;
+    }
+    .icons {
+        position: relative;
+        bottom: -10px;
+        .item {
+            width: 20px;
+            height:30px;
+            line-height: 20px !important;
+            float: left;
+            padding:0 !important;
+            margin:0 !important;
+            position: relative;
+            svg path {
+                fill: $bluishGrey;
+            }
+            &.active {
+                svg path {
+                    fill: $pink;
+                }
+            }
+        }
+    }
+    .RowButtons {
+        display: block;
+        width: 20px;
+        text-align: center;
+        float:right;
+        .item {
+            svg path {
+                fill:$lightGrey;
+            }
+            &.active {
+                svg path {
+                    fill:$skyBlue;
+                }
+            }
         }
     }
 }
