@@ -38,7 +38,6 @@ $pink: #EB675E;
     }
     td.image {
         padding:5px!important;
-        min-width: 100px;
         img {
             display:block;
             width:100%;
@@ -135,13 +134,14 @@ $pink: #EB675E;
 //tabler 
 @media only screen and (max-width: 991px) {
     .ProductRow  {
-        .productTextCol {
+        td.productTextCol {
             max-width: 100%;
             .flag {
                 padding:5px 0 15px;
             }
         }
-        .image {
+        td.image {
+            min-width: 100px;
             img {
                 max-width: 150px;
                 margin:0 auto;
@@ -156,7 +156,7 @@ $pink: #EB675E;
         table, .ui.table {
             text-align: center;
         }
-        .productTextCol {
+        td.productTextCol {
             max-width: 100%;
         }
         .RowButtons {
